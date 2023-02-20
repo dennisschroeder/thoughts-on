@@ -52,12 +52,12 @@ When you don´t know how the system behaves. When you don´t know how the system
 Here complexity gets created just by the sheer size of a system. It has lots of components. And even when the logic of every component is easy to understand or already well-known, it is hard to understand the system as a whole. It is when the system is too big to fit into one person's head. 
 
 ### In general
-So, in general, complexity means not knowing stuff about a system. But complexity is not binary. It is not that a system is complex or not. We instead understand complexity as the degree of complexity the system has. Therefore, our goal is to 
+So, in general, complexity means not knowing stuff about a system. But complexity is not binary. It is not that a system is complex or not. We instead understand complexity as the degree of complexity the system has. Therefore, our goal is to minimize the complexity as much as possible, knowing that there is mostly no chance to reduce it to zero.
 
 ## Tackling Accidental complexity
 As I defined accidental complexity as the stuff you don´t need, the solution to the problem is pretty simple. Remove the stuff that is unnecessary. You're welcome.
 
-Well, sadly the hard part is recognizing what is essential and what is not. Most times we need to explore this. But instead of going all in at first, we should start as simple as possible and work iteratively and incrementally our way and add complexity when we discover that there is a need and make the accidental complexity essential.
+Well, sadly the hard part is recognizing what is essential and what is not. Most times we need to explore this. But instead of going all in at first, we should start as simple as possible and work iteratively and incrementally our way and add complexity when we discover that there is a need.
 
 I would even go one step further and say:
 
