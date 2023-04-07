@@ -47,7 +47,7 @@ The nature of behavioral complexity is the lack of predictability of how the sys
 
 Large and highly coupled code is unable to change easily without a high risk of introducing bugs for example. 
 
-Concurrent or parallel running systems are another good example of behavioral complexity due to their nondeterministic nature.
+Concurrent or parallel running systems can be another excellent example of behavioral complexity because if you don't be careful they quickly become non-deterministic.
 
 And there is a system that is tremendously complex that we all know well, even though it has nothing to do with computers, the human body. It is a complex system because it consists of many different parts, each of which has its unique structure, function, and behavior. These parts include organs, tissues, cells, molecules, and nerves, which work together in intricate ways to sustain life and maintain homeostasis. The interactions between different parts of the body are often nonlinear, meaning that small changes in one component can have significant effects on the behavior of the entire system.
 
