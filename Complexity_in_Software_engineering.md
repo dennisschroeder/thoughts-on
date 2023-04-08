@@ -27,10 +27,10 @@ Many software systems rely on a large number of external libraries and dependenc
 The process of configuring a system can become accidentally complex if it requires a long list of settings to be adjusted, many of which are not well-documented or understood by the user and most of them may not be necessary. This can make it difficult to set up, test and maintain the system, and can also increase the risk of errors and inconsistencies.
 
 #### Features:
-Complexity is not only a "technical" problem. Feature complexity refers to the complexity that arises from the features and functionality that a system provides. Feature complexity can be caused by factors such as poorly-defined requirements, changing user needs, and the need to integrate with other systems.
+Complexity is not only a "technical" problem. Feature complexity is when you don´t know the value the feature has to a user. An untested (not gathering feedback from users) feature is always accidentally complex because you don't know yet if it's needed from the user's perspective.
 
 ## Essential complexity
-When accidental complexity is the stuff you don´t need, essential complexity is what you cannot avoid. 
+When accidental complexity is the stuff you don't need, essential complexity is what you cannot avoid. 
 
 It refers to the inherent complexity of a problem or task that cannot be eliminated through simplification or abstraction. It is the complexity that is inherent in the problem domain itself, rather than in the implementation of a solution.
 
@@ -42,17 +42,15 @@ A good example of essential complexity is cryptography. It involves the secure t
 There are a lot of different types of complexity out there [Wikipedia](https://en.wikipedia.org/wiki/Complexity). In software engineering, we are especially interested in behavioral complexity.
 
 This type of complexity arises from the interactions between different parts of the system, as well as between the system and its users.
+The nature of behavioral complexity is the lack of predictability of how the system reacts to interaction or change.
 
-The nature of behavioral complexity is the lack of predictability of how the system reacts to interaction or change. 
+**Examples**:
 
-Large and highly coupled code is unable to change easily without a high risk of introducing bugs for example. 
+- Large and highly coupled code is unable to change easily without a high risk of introducing bugs for example. 
 
-Concurrent or parallel running systems can be another excellent example of behavioral complexity because if you don't be careful they quickly become non-deterministic.
+- Concurrent or parallel running systems can be another excellent example of behavioral complexity because if you don't be careful they quickly become non-deterministic.
 
-And there is a system that is tremendously complex that we all know well, even though it has nothing to do with computers, the human body. It is a complex system because it consists of many different parts, each of which has its unique structure, function, and behavior. These parts include organs, tissues, cells, molecules, and nerves, which work together in intricate ways to sustain life and maintain homeostasis. The interactions between different parts of the body are often nonlinear, meaning that small changes in one component can have significant effects on the behavior of the entire system.
-
-### In general
-So, in general, complexity means not knowing stuff about a system, especially its behavior. But complexity is not binary. It is not that a system is complex or not. We instead understand complexity as the degree of complexity the system has. Therefore, our goal is to minimize it as much as possible, knowing that there is no chance to reduce it to zero.
+- And there is an system that is tremendously complex that we all know well, even though it has nothing to do with computers, the human body. It is a complex system because it consists of many different parts, each of which has its unique structure, function, and behavior. These parts include organs, muscles, nerves, glands, hormones, etc.  which work together in intricate ways to sustain life and maintain homeostasis. The interactions between different parts of the body are often nonlinear, meaning that small changes in one component can have significant effects on the behavior of the entire system.
 
 ## Tackling accidental complexity
 As we defined accidental complexity as the stuff you don´t need, the solution to the problem is pretty simple. Remove the unnecessary stuff. You're welcome.
@@ -84,11 +82,11 @@ By treating the product development process not as an experiment, with a clear h
 
 Nice, we don´t need to reinvent the wheel. Some people already came across this problem and created a small, lightweight process how to make lean experiments:
 
-1. Hypothesis: Clearly state the hypothesis you want to test. For example: "If we add a feature that allows users to easily save their progress, then more users will complete the signup process."
+1. Hypothesis: Clearly state the hypothesis you want to test. For example: "If we add a feature that allows users to easily save their progress, then more users will complete the sign-up process."
 
-2. Metrics: Define the metrics you will use to measure the success of the experiment. These should be tied to your hypothesis. The metrics should be a part of your hypothesis. For example: If we add a feature that allows users to easily save their progress, then 20% more users will complete the signup process." Without a metric, your hypothesis is just an assumption. It is useless because it can not be tested and therefore not validated.
+2. Metrics: Define the metrics you will use to measure the success of the experiment. These should be tied to your hypothesis. The metrics should be a part of your hypothesis. For example: If we add a feature that allows users to easily save their progress, then 20% more users will complete the sign-up process." Without a metric, your hypothesis is just an assumption. It is useless because it can not be tested and therefore not validated.
 
-4. Methodology: Describe how you will run the experiment. This should include details such as the sample size, the timeframe for the experiment, and any control groups you will use. For example: "We will randomly assign half of our users to the experimental group, which will have the new feature. The other half will be in the control group, which will not have the new feature. We will run the experiment for one week and measure the success metrics."
+4. Methodology: Describe how you will run the experiment. This should include details such as the sample size, the time-frame for the experiment, and any control groups you will use. For example: "We will randomly assign half of our users to the experimental group, which will have the new feature. The other half will be in the control group, which will not have the new feature. We will run the experiment for one week and measure the success metrics."
 
 5. Prototyping: Develop a prototype of the feature or change you want to test. This should be quick and inexpensive, focusing on the core functionality that you want to test.
 Testing: Run the experiment according to your methodology, collecting data on your success metrics. Be sure to track any unexpected results or issues that arise during the experiment.
@@ -108,7 +106,7 @@ That´s the best we can do.
 Ok, let us assume you fought the battle with yourself and everybody outside the team to avoid accidental complexity as much as possible. What is left is the stuff you need to live with. It is essential to solving the problem. It still is your enemy but you cannot run away from it. The good news is, there is plenty of stuff you can do to manage it. Let us see what we can do.
 
 ### Modularity
-If complexity is the lack of knowledge of how a system behaves, especially when changes are made to it, we should find a coherent structure to separate the parts of our system that should not be interdependent. When we reduce the coupling between stuff that is not coherent, we only need to "load" the stuff in our brains that has the same concern, when applying changes to it and therefore reduce the possibility that changes affect too many other parts of the system that we are not able to track at once. It´s devide and concour. The concern of a thing plays an important role here. But not only. In summary, the following are the properties that code should have that help us master essential complexity.
+If complexity is the lack of knowledge of how a system behaves, especially when changes are made to it, we should find a coherent structure to separate the parts of our system that should not be interdependent. When we reduce the coupling between stuff that is not coherent, we only need to "load" the stuff in our brains that has the same concern, when applying changes to it and therefore reduce the possibility that changes affect too many other parts of the system that we are not able to track at once. It´s divide and conquer. The concern of a thing plays an important role here. But not only. In summary, the following are the properties that code should have that help us master essential complexity.
 
     - Modular
     - Separated by concerns
@@ -131,7 +129,7 @@ Do lean experimentation from a technical perspective. Make each iterative step a
 You get the point.
 
 ## Conclusion
-Developing digital products is hard and challenging. It is easy to screw things up quickly because not only our systems and their behavior are complex, the process of development is complex too.
+Developing digital products is hard and challenging. It is easy to screw things up quickly because not only our systems and their behavior are complex, the process of development itself is complex too.
 
 To master it every individual as well as the whole organization needs to become an expert in learning. The organization and every part of it need to become an environment that supports learning, knowledge sharing, and embracing change. 
 
