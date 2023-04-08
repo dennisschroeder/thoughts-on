@@ -102,18 +102,19 @@ By treating the product development process not as an experiment, with a clear h
 
 Nice, we don't need to reinvent the wheel. Some people already came across this problem and created a small, lightweight process how to make lean experiments:
 
-1. Hypothesis: Clearly state the hypothesis you want to test. For example: "If we add a feature that allows users to easily save their progress, then more users will complete the sign-up process."
+1. **Hypothesis**: Clearly state the hypothesis you want to test. For example: "If we add a feature that allows users to easily save their progress, then more users will complete the sign-up process."
 
-2. Metrics: Define the metrics you will use to measure the success of the experiment. These should be tied to your hypothesis. The metrics should be a part of your hypothesis. For example: If we add a feature that allows users to easily save their progress, then 20% more users will complete the sign-up process." Without a metric, your hypothesis is just an assumption. It is useless because it can not be tested and therefore not validated.
+2. **Metrics**: Define the metrics you will use to measure the success of the experiment. These should be tied to your hypothesis. The metrics should be a part of your hypothesis. For example: If we add a feature that allows users to easily save their progress, then 20% more users will complete the sign-up process." Without a metric, your hypothesis is just an assumption. It is useless because it can not be tested and therefore not validated.
 
-4. Methodology: Describe how you will run the experiment. This should include details such as the sample size, the time-frame for the experiment, and any control groups you will use. For example: "We will randomly assign half of our users to the experimental group, which will have the new feature. The other half will be in the control group, which will not have the new feature. We will run the experiment for one week and measure the success metrics."
+4. **Methodology**: Describe how you will run the experiment. This should include details such as the sample size, the time-frame for the experiment, and any control groups you will use. For example: "We will randomly assign half of our users to the experimental group, which will have the new feature. The other half will be in the control group, which will not have the new feature. We will run the experiment for one week and measure the success metrics."
 
-5. Prototyping: Develop a prototype of the feature or change you want to test. This should be quick and inexpensive, focusing on the core functionality that you want to test.
-Testing: Run the experiment according to your methodology, collecting data on your success metrics. Be sure to track any unexpected results or issues that arise during the experiment.
+5. **Prototyping**: Develop a prototype of the feature or change you want to test. This should be quick and inexpensive, focusing on the core functionality that you want to test. So instead of a Minimal Valuable Product define an even smaller Minimal Testable Product. But bear in mind that your results heavily depend on what you test. If you test for revenue, you need to have the whole behavior of the feature implemented. Most of the time you'll end up implementing the MVP feature. But if you want to test if the majority of users would use the feature, a UI-only implementation with no real functionality might be just enough to gain first insides.
 
-6. Analysis: Analyze the data from the experiment, comparing the success metrics for the experimental group and the control group. Determine whether the hypothesis was supported or not.
+6. **Testing**: Run the experiment according to your methodology, collecting data on your success metrics. Be sure to track any unexpected results or issues that arise during the experiment.
 
-7. Next steps: Based on the results of the experiment, decide on the next steps. If the hypothesis was supported, consider implementing the feature or change more broadly. If the hypothesis was not supported, consider iterating on the prototype and running the experiment again, or pivoting to a different approach altogether.
+7. **Analysis**: Analyze the data from the experiment, comparing the success metrics for the experimental group and the control group. Determine whether the hypothesis was supported or not.
+
+8. **Next steps**: Based on the results of the experiment, decide on the next steps. If the hypothesis was supported, consider implementing the feature or change more broadly. If the hypothesis was not supported, consider iterating on the prototype and running the experiment again, or pivoting to a different approach altogether.
 
 Remember that the lean experiment approach is all about rapid prototyping and iteration. Don't be afraid to adjust your approach based on what you learn during the experiment.
 
