@@ -11,7 +11,7 @@ Avoiding complexity whenever possible. But when is it possible and when not? I g
 The first thing we can do is learn about the concept of essential complexity and accidental complexity. This concept was introduced by Turing Award winner Fred Brooks who is mostly known for his paper "No Silver Bullet—Essence and Accident in Software Engineering". So let us have a look at it:
 
 ## Accidental complexity
-Accidental complexity refers to the complexity that arises due to the implementation details of a system rather than its essential nature. In other words, it is the complexity that is not inherent in the problem being solved, but rather a result of the particular way the solution is constructed. Or in other words: It's the stuff you don´t need to solve a  problem!
+Accidental complexity refers to the complexity that arises due to the implementation details of a system rather than its essential nature. In other words, it is the complexity that is not inherent in the problem being solved, but rather a result of the particular way the solution is constructed. Or in other words: It's the stuff you don't need to solve a  problem!
 
 ### Popular examples are:
 
@@ -27,7 +27,7 @@ Many software systems rely on a large number of external libraries and dependenc
 The process of configuring a system can become accidentally complex if it requires a long list of settings to be adjusted, many of which are not well-documented or understood by the user and most of them may not be necessary. This can make it difficult to set up, test and maintain the system, and can also increase the risk of errors and inconsistencies.
 
 #### Features:
-Complexity is not only a "technical" problem. Feature complexity is when you don´t know the value the feature has to a user. An untested (not gathering feedback from users) feature is always accidentally complex because you don't know yet if it's needed from the user's perspective.
+Complexity is not only a "technical" problem. Feature complexity is when you don't know the value the feature has to a user. An untested (not gathering feedback from users) feature is always accidentally complex because you don't know yet if it's needed from the user's perspective.
 
 ## Essential complexity
 When accidental complexity is the stuff you don't need, essential complexity is what you cannot avoid. 
@@ -53,19 +53,19 @@ The nature of behavioral complexity is the lack of predictability of how the sys
 - And there is an system that is tremendously complex that we all know well, even though it has nothing to do with computers, the human body. It is a complex system because it consists of many different parts, each of which has its unique structure, function, and behavior. These parts include organs, muscles, nerves, glands, hormones, etc.  which work together in intricate ways to sustain life and maintain homeostasis. The interactions between different parts of the body are often nonlinear, meaning that small changes in one component can have significant effects on the behavior of the entire system.
 
 ## Tackling accidental complexity
-As we defined accidental complexity as the stuff you don´t need, the solution to the problem is pretty simple. Remove the unnecessary stuff. You're welcome.
+As we defined accidental complexity as the stuff you don't need, the solution to the problem is pretty simple. Remove the unnecessary stuff. You're welcome.
 
 Well, sadly the hard part is recognizing what is essential and what is not. Most times we need to explore this incrementally because we do not know what we or the product needs right from the beginning. So instead of going all in at first, start as simple as possible and work iteratively and incrementally our way and add complexity when we discover that there is an actual need.
 
-Work systematically. Start only with what is needed. Do a bit of an upfront design. Be smart and stop fooling yourself. Do not make decisions on what is good for your cv, so-called cv driven development. Yes, developers have a bucket list with technologies they haven´t yet worked with. Don´t do this. Be a professional, not an amateur.
+Work systematically. Start only with what is needed. Do a bit of an upfront design. Be smart and stop fooling yourself. Do not make decisions on what is good for your cv, so-called cv driven development. Yes, developers have a bucket list with technologies they haven't yet worked with. Don't do this. Be a professional, not an amateur.
 
 You should ask yourself: Do we need a dependency injection framework to fulfill the pattern? Do we need a cache right from the beginning, because we might need it later? Do we need to use this huge library even though we only use a tiny bit of functionality of it, that we could easily implement on our own? Do you need 8 layers of abstraction in your code because you blindly followed some methodology? And do you have to use all the fancy new language features that only bloat your code and deliver no real value rather than make only you happy? I say: "The best code is boring code". Structure your system in a way that you can delegate these decisions to the future when you explored more terrain. When these questions are easier to answer. Have an architecture that is open for extension but closed for modification.
 
-I would even go one step further and say let´s apply this "lean" approach also to features, because:
+I would even go one step further and say let's apply this "lean" approach also to features, because:
 
 **The best code is the code that does not need to be written.**
 
-So do we need to write new code to give users the capability to solve a problem? Or even worse, set up a whole new microservice before we even know what the problem is or in other words what kind of capabilities the user needs to solve his problems. We might use an existing API to at least give some capabilities to the users and then measure if our assumptions meet reality. Don´t build the stakeholder's fancy tool to manage the new feature right from the beginning, before you even know if the feature will be successful. Use tools you already have, even if it does not fit perfectly. After you gained some more insights, re-evaluate the decision and move on which might mean writing new code.
+So do we need to write new code to give users the capability to solve a problem? Or even worse, set up a whole new microservice before we even know what the problem is or in other words what kind of capabilities the user needs to solve his problems. We might use an existing API to at least give some capabilities to the users and then measure if our assumptions meet reality. Don't build the stakeholder's fancy tool to manage the new feature right from the beginning, before you even know if the feature will be successful. Use tools you already have, even if it does not fit perfectly. After you gained some more insights, re-evaluate the decision and move on which might mean writing new code.
 
 ### Lean Experimentation
 Does the user want this feature? What is the value we expect from this feature? How can we measure success?
@@ -74,13 +74,13 @@ Business people tend to create unnecessary complexity by requiring features that
 
 By treating the product development process not as an experiment, with a clear hypothesis and feedback mechanism to evaluate the hypothesis, we can increase the risk of introducing unnecessary features and therefore, create overly complex systems. 
 
- If we do not test (gathering feedback from users) our features, they are always accidentally complex. Because you don´t know if you need it. Don´t rely on assumptions and guesses. Gather data to evaluate the value. Falsify your hypothesis. You might not be able to find causation but at least the data in combination with user feedback will give you signals, hints, and stuff to further investigate on.
+ If we do not test (gathering feedback from users) our features, they are always accidentally complex. Because you don't know if you need it. Don't rely on assumptions and guesses. Gather data to evaluate the value. Falsify your hypothesis. You might not be able to find causation but at least the data in combination with user feedback will give you signals, hints, and stuff to further investigate on.
 
 **Simply, do lean experimentation**:
 
 "Lean Experiments are based on the Lean Startup approach to creating new products and services under conditions of extreme uncertainty. Lean Experiments are designed to quickly and cheaply gather evidence to validate or invalidate risky assumptions about your product."
 
-Nice, we don´t need to reinvent the wheel. Some people already came across this problem and created a small, lightweight process how to make lean experiments:
+Nice, we don't need to reinvent the wheel. Some people already came across this problem and created a small, lightweight process how to make lean experiments:
 
 1. Hypothesis: Clearly state the hypothesis you want to test. For example: "If we add a feature that allows users to easily save their progress, then more users will complete the sign-up process."
 
@@ -100,13 +100,13 @@ Remember that the lean experiment approach is all about rapid prototyping and it
 ### Protect your system
 In good organizations, the Teams that build the product are self-organized and own their product. This also means that the team has the responsibility to protect the system from any extrinsic- or intrinsic-driven complexity which can be any kind of ideas, feature requests, and changes, especially if they inherently introduce a lot of new (behavioral) complexity to the project. Have in mind that, only a simple solution is a good solution when working on such. Suggest simpler alternatives. Balance customer value with complexity. Let simplicity be your mantra. 
 
-That´s the best we can do.
+That's the best we can do.
 
 ## Tackling Essential complexity
 Ok, let us assume you fought the battle with yourself and everybody outside the team to avoid accidental complexity as much as possible. What is left is the stuff you need to live with. It is essential to solving the problem. It still is your enemy but you cannot run away from it. The good news is, there is plenty of stuff you can do to manage it. Let us see what we can do.
 
 ### Modularity
-If complexity is the lack of knowledge of how a system behaves, especially when changes are made to it, we should find a coherent structure to separate the parts of our system that should not be interdependent. When we reduce the coupling between stuff that is not coherent, we only need to "load" the stuff in our brains that has the same concern, when applying changes to it and therefore reduce the possibility that changes affect too many other parts of the system that we are not able to track at once. It´s divide and conquer. The concern of a thing plays an important role here. But not only. In summary, the following are the properties that code should have that help us master essential complexity.
+If complexity is the lack of knowledge of how a system behaves, especially when changes are made to it, we should find a coherent structure to separate the parts of our system that should not be interdependent. When we reduce the coupling between stuff that is not coherent, we only need to "load" the stuff in our brains that has the same concern, when applying changes to it and therefore reduce the possibility that changes affect too many other parts of the system that we are not able to track at once. It's divide and conquer. The concern of a thing plays an important role here. But not only. In summary, the following are the properties that code should have that help us master essential complexity.
 
     - Modular
     - Separated by concerns
