@@ -65,7 +65,21 @@ Structure your system in a way that you can delegate decisions to the future whe
 
 Let's say your system needs some kind of persistence mechanism to do its job. Maybe another to-do list app. Don't start with the decision on what kind of database you should implement. In most cases, the type of db does not matter at the beginning. Start with what is essential to your system, the business rules or higher-order policies. Define an interface for the persistence logic. Introduce what Uncle Bob referred to as an architectural boundary in his book "Clean Architecture". This makes the implementation a plugin. A detail that can be changed later. Start with the easiest and simplest implementation that fulfills your early needs. In most cases, this would be an in-memory db to use as a fake in your unit tests. Later on, you can add an implementation (plugin) for an SQL or NO-SQL db or whatever type of DB you need. Maybe a simple file storage system is sufficient enough. This prevents you from introducing accidental complexity from the beginning.
 
-This architectural pattern is mostly known as [Hexagonal Architecture (also known as Ports and Adapters)](https://en.wikipedia.org/wiki/Hexagonal_architecture_(software)). But there is also [DCI](https://en.wikipedia.org/wiki/Data,_context_and_interaction) or [BCE](https://en.wikipedia.org/wiki/Entity-control-boundary) and of course [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) as an attempt at integrating all these architectures into a single actionable idea. They all tackle the same problem and more. I highly recommend getting yourself familiar with at least one of their concepts.  But be aware that in some cases even implementing those boundaries can be accidentally complex.
+This architectural pattern is mostly known as [Hexagonal Architecture (also known as Ports and Adapters)](https://en.wikipedia.org/wiki/Hexagonal_architecture_(software)). But there is also [DCI](https://en.wikipedia.org/wiki/Data,_context_and_interaction) or [BCE](https://en.wikipedia.org/wiki/Entity-control-boundary) and of course [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) as an attempt at integrating all these architectures into a single actionable idea. They all tackle the same problem and more.
+
+Each of these architectures produces systems that have the following characteristics:
+- **Independent of frameworks**: 
+The architecture does not depend on the existence of some library of feature-laden software. This allows you to use such frameworks as tools, rather than forcing you to cram your system into their limited constraints.
+- **Testable**: 
+The business rules can be tested without the UI, database, web server, or any other external element.
+- **Independent of the UI**: 
+The UI can change easily, without changing the rest of the system. A web UI could be replaced with a console UI, for example, without changing the business rules.
+- **Independent of the database**:
+You can swap out Oracle or SQL Server for Mongo, BigTable, CouchDB, or something else. Your business rules are not bound to the database.
+- **Independent of any external agency**: 
+In fact, your business rules don’t know anything at all about the interfaces to the outside world.
+
+I highly recommend getting yourself familiar with at least one of their concepts.  But be aware that in some cases even implementing those boundaries can be accidentally complex.
 
 Moving on. Let's go one step further and apply this "lean" approach also to our features, because:
 
