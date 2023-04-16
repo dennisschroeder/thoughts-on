@@ -50,7 +50,7 @@ The nature of behavioral complexity is the lack of predictability of how the sys
 
 - Concurrent or parallel running systems can be another excellent example of behavioral complexity because if you don't be careful they quickly become non-deterministic.
 
-- And there is an system that is tremendously complex that we all know well, even though it has nothing to do with computers, the human body. It is a complex system because it consists of many different parts, each of which has its unique structure, function, and behavior. These parts include organs, muscles, nerves, glands, hormones, etc.  which work together in intricate ways to sustain life and maintain homeostasis. The interactions between different parts of the body are often nonlinear, meaning that small changes in one component can have significant effects on the behavior of the entire system.
+- And there is a system that is tremendously complex that we all know well, even though it has nothing to do with computers, the human body. It is a complex system because it consists of many different parts, each of which has its unique structure, function, and behavior. These parts include organs, muscles, nerves, glands, hormones, etc. which work together in intricate ways to sustain life and maintain homeostasis. The interactions between different parts of the body are often nonlinear, meaning that small changes in one component can have significant effects on the behavior of the entire system.
 
 ## Tackling accidental complexity
 As we defined accidental complexity as the stuff you don't need, the solution to the problem is pretty simple. Remove the unnecessary stuff. You're welcome.
@@ -94,7 +94,7 @@ Business people tend to create unnecessary complexity by requiring features that
 
 By treating the product development process not as an experiment, with a clear hypothesis and feedback mechanism to evaluate the hypothesis, we can increase the risk of introducing unnecessary features and therefore, create overly complex systems. 
 
-**If we do not test (gathering feedback from users) our features, they are always accidentally complex** because you don't know if you need it. Don't rely on assumptions and guesses. Start with your best guess an quickly gather data to evaluate the value. Falsify your hypothesis. You might not be able to find causation but at least the data in combination with user feedback will give you signals, hints, and stuff to further investigate on.
+**If we do not test (gathering feedback from users) our features, they are always accidentally complex** because you don't know if you need them. Don't rely on assumptions and guesses. Start with your best guess and quickly gather data to evaluate the value. Falsify your hypothesis. You might not be able to find causation but at least the data in combination with user feedback will give you signals, hints, and stuff to further investigate on.
 
 **Simply, do lean experimentation**:
 
@@ -106,7 +106,7 @@ Nice, we don't need to reinvent the wheel. Some people already came across this 
 
 2. **Metrics**: Define the metrics you will use to measure the success of the experiment. These should be tied to your hypothesis. The metrics should be a part of your hypothesis. For example: If we add a feature that allows users to easily save their progress, then 20% more users will complete the sign-up process." Without a metric, your hypothesis is just an assumption. It is useless because it can not be tested and therefore not validated.
 
-4. **Methodology**: Describe how you will run the experiment. This should include details such as the sample size, the time-frame for the experiment, and any control groups you will use. For example: "We will randomly assign half of our users to the experimental group, which will have the new feature. The other half will be in the control group, which will not have the new feature. We will run the experiment for one week and measure the success metrics."
+4. **Methodology**: Describe how you will run the experiment. This should include details such as the sample size, the time frame for the experiment, and any control groups you will use. For example: "We will randomly assign half of our users to the experimental group, which will have the new feature. The other half will be in the control group, which will not have the new feature. We will run the experiment for one week and measure the success metrics."
 
 5. **Prototyping**: Develop a prototype of the feature or change you want to test. This should be quick and inexpensive, focusing on the core functionality that you want to test. So instead of a Minimal Valuable Product define an even smaller Minimal Testable Product. But bear in mind that your results heavily depend on what you test. If you test for revenue, you need to have the whole behavior of the feature implemented. Most of the time you'll end up implementing the MVP feature. But if you want to test if the majority of users would use the feature, a UI-only implementation with no real functionality might be just enough to gain first insides.
 
