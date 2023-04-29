@@ -11,7 +11,7 @@ Software has two main values:
 - Behavior
 - Structure
 
-Since behavior has no impact on the structure of a software system, for the structure it is quite the opposite.
+Behavior has no impact on the structure of a software system, but the structure does have an impact on the behavior.
 
 Software was invented to be “soft”, as its name already tells us. It was intended to be a way to easily change the behavior of machines. If we’d wanted the behavior of machines to be hard to change, we would have called it hardware.
 
