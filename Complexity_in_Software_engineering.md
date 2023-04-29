@@ -19,13 +19,15 @@ And if the code or the system is all tangled up, your changes to it will have a 
 
 Here are a few examples:
 
-Knight Capital Group lost $440 million in 2012 due to a trading algorithm error caused by a glitch in the code due to complexity.
-Lehman Brothers filed for bankruptcy in 2008 due to its reliance on complex financial models and trading algorithms.
-Blockbuster Video declared bankruptcy in 2010 due to its outdated business model and complex inventory management system.
-RadioShack filed for bankruptcy in 2015 due to its inability to keep up with technological change and its outdated inventory management system.
-Borders Group went bankrupt in 2011 due to its failure to adapt to changing consumer preferences and reliance on a complex inventory management system.
+- Knight Capital Group lost $440 million in 2012 due to a trading algorithm error caused by a glitch in the code due to complexity.
 
-In all these cases was a need for behavior change that could not be enforced due to complex systems that were out of control. The change was needed to fulfill new customer or internal requirements. Those companies that were able to adapt their systems to the requirements quickly had huge market advantages.
+- Lehman Brothers filed for bankruptcy in 2008 due to its reliance on complex financial models and trading algorithms.
+
+- RadioShack filed for bankruptcy in 2015 due to its inability to keep up with technological change and its outdated inventory management system.
+
+- Borders Group went bankrupt in 2011 due to its failure to adapt to changing consumer preferences and reliance on a complex inventory management system.
+
+In all these cases was a need for behavior change that could not be enforced due to complex systems that were out of control. The change was needed to fulfill new customer or internal requirements. Those companies that were able to adapt their systems to the requirements quickly had huge market advantages. The above mentioned companies not.
 
 **So what can we do?**
 
