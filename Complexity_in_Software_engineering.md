@@ -6,13 +6,6 @@ Unfortunately, we often see precisely the opposite happening. Complexity is a tr
 
 **Why is complexity such a thing?**
 
-Software has two main values:
-
-- Behavior
-- Structure
-
-Behavior has no impact on the structure of a software system, but the structure does have an impact on the behavior.
-
 Software was invented to be “soft”, as its name already tells us. It was intended to be a way to easily change the behavior of machines. If we’d wanted the behavior of machines to be hard to change, we would have called it hardware.
 
 And if the code or the system is all tangled up, your changes to it will have a high probability to have an unplanned impact on the behavior of the system. Therefore, it reduces the ability to change your system. It slows down the whole development process or as a worst-case scenario, it makes further evolution impossible. As you can imagine, this can lead to a loss in revenue or even to bankruptcy.
