@@ -192,7 +192,7 @@ You get the point.
 
 Developing digital products is hard and challenging. It is easy to screw things up quickly because not only our systems and their behavior are complex, the process of development itself is complex too.
 
-To master it every individual as well as the whole organization needs to become an expert in learning. The organization and every part of it need to become an environment that supports learning, knowledge sharing, and embracing change.
+To master it every individual as well as the whole organization needs to become an expert in learning. The organization and every part of it needs to become an environment that supports learning, knowledge sharing, and embracing change.
 
 We as individuals tend to fool ourselves, because we are humans. We like simple answers to complex questions and do not care if the answer is right or wrong if it sounds good. This can be mitigated through a lightweight process of lean experiments that leads us to a road of evidence.
 
