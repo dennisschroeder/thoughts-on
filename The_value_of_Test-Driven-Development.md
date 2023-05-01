@@ -21,14 +21,22 @@ Run your tests and make sure they succeed.
 
 ### Refactor toward a better structure
 
-After you are done implementing the logic, we need to start thinking about the future. Our fresh code works fine, but what about his ability to be adaptable to changes? Software was invented to be a way to easily change the behavior of machines. This ability is needed because the requirements of users or internal stakeholders change pretty quickly. 
+After you are done implementing the logic, we need to start thinking about the future. Our fresh code works fine, but what about his ability to be adaptable to changes? Software was invented to be a way to easily change the behavior of machines. This ability is needed because the requirements of users, internal stakeholders, or our (technical) environment change pretty quickly.
 
 The effort that is needed to make changes to your system is called the Cost of Change. When the product development cycles are short, the learnings come in quickly and the need for change also. Therefore, your system needs to be agile. The cost of change must be as low as possible.
 
+We achieve this by reducing the complexity of our code. In software engineering, we are especially interested in behavioral complexity.
+This type of complexity arises from the interactions between different parts of the system, as well as between the system and its users. The nature of behavioral complexity is the lack of predictability of how the system reacts to interaction or change.
+
+To reduce complexity we need to structure our parts in a way that encapsulates behavior. We mainly strive for independence between the moving parts by separation and clear interfaces. If you want to learn more about mastering complexity, I recommend reading my other article on this topic.
+
+Run your tests again and make sure they still succeed.
 
 ## Summerized
 
-First...
+Let´s recap what we just did:
+
+First We created executable specifications in the form of tests and confirm that they fail by not implementing any behavior yet.
 
 Then...
 
