@@ -26,7 +26,7 @@ In all these cases was a need for behavior change that could not be enforced due
 
 Avoiding complexity whenever possible. But when is it possible and when not? I guess the only right answer can be: "It depends!".
 
-The first thing we can do is learn about the concept of essential complexity and accidental complexity. This concept was introduced by Turing Award winner Fred Brooks who is mostly known for his paper "No Silver Bullet—Essence and Accident in Software Engineering". So let us have a look at it:
+The first thing we can do is learn about the concept of essential complexity and accidental complexity. This concept was introduced by Turing Award winner Fred Brooks who is mostly known for his Book "The Mythical Man Month" and his paper "No Silver Bullet—Essence and Accident in Software Engineering". So let us have a look at it:
 
 ## Accidental complexity
 
@@ -180,7 +180,7 @@ At this point, I deliberately refrain from giving extensive examples and elabora
 
 ### Experimentation, again
 
-Modularity helps us to tackle complexity in code. But how do we even get there? How do we know what parts the systems should have? What are the concerns that need to be separated? What should be coupled and what not? 
+Modularity helps us to tackle complexity in code. But how do we even get there? How do we know what parts the systems should have? What are the concerns that need to be separated? What should be coupled and what not?
 
 To answer the questions, we need to see software engineering as an exercise in discovery and learning. It is always hard to understand something as a whole. Therefore, we need to explore it by developing the system. We cannot learn by just guessing. We need to make our hands dirty and build the software piece by piece (incrementally) to better understand it.
 
@@ -196,4 +196,4 @@ To master it every individual as well as the whole organization needs to become 
 
 We as individuals tend to fool ourselves, because we are humans. We like simple answers to complex questions and do not care if the answer is right or wrong if it sounds good. This can be mitigated through a lightweight process of lean experiments that leads us to a road of evidence.
 
-We finally do the stuff that we know works to build better products faster
+We finally do the stuff that we know works to build better products faster.
