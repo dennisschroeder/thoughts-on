@@ -4,13 +4,13 @@ There are a lot of misconceptions about TDD out there. And I will not go into de
 
 ## The method
 
-### Write executable specifications
+### 1. Write executable specifications
 
 The classic test-driven approach is to start your implementation of some behavior you want to achieve by writing your test first. Yes even before starting the implementation. In my experience though, it does not matter if you write the test first or if you write it in parallel with your implementation. The point is to write it immediately and as the same process of implementing the logic. Not after you finished everything. 
 
 Run your tests and make sure they **fail**.
 
-### Implement the logic and structure for testability
+### 2. Implement the logic and structure for testability
 
 Now comes the fun part. Implement the logic. But focus on behavior, not on the structure. Evolve your test in parallel with your code. Run little experiments by running the test(s) to discover the behavior of your design through learning. The structure you give your code is only driven by testability. Keep in mind that you should not test the implementation rather than the behavior of your code. Your code should never have extra logic that only serves testability needs. This is a red flag. Take a step back and try to find a way to create the testability you need to achieve by separation that reduces coupling.
 
@@ -19,9 +19,10 @@ Even though we made no big moves to create a high-quality structure. It is ok to
 
 Run your tests and make sure they **succeed**.
 
-### Refactor toward a better structure
+### 3. Refactor toward a better structure
 
-After you are done implementing the logic, we need to start thinking about the future. Our fresh code works fine, but what about his ability to be adaptable to changes? Software was invented to be a way to easily change the behavior of machines. This ability is needed because the requirements of users, internal stakeholders, or our (technical) environment change pretty quickly.
+After you are done implementing the logic, we need to start thinking about the future. Our fresh code works fine, but what about his ability to be adaptable to changes?
+Software was invented to be a way to easily change the behavior of machines. This ability is needed because the requirements of users, internal stakeholders, or our (technical) environment change pretty quickly.
 
 The effort that is needed to make changes to your system is called the Cost of Change. When the product development cycles are short, the learnings come in quickly and the need for change also. Therefore, your system needs to be agile. The cost of change must be as low as possible.
 
@@ -35,7 +36,8 @@ Run your tests again and make sure they still **succeed**.
 #### Red, Green, Refactor 
 Just to be mentioned. This process is also known as red, green, and refactor. Because first, you start with failing tests which are mostly visually indicated by our toolings with a red color. Then you work till all tests pass which is shown by a green color and then you start the refactoring.
 
-## Summerized
+
+## Summarized
 
 Let´s recap what we just did:
 
@@ -49,8 +51,16 @@ At last, we invested in the future and made our code sustainable by lowering the
 
 We, humans, tend to interpret working efficiently as doing multiple things at a time. So-called human multitasking. Wikipedia says:
 
-Human multitasking is the concept that one can split their attention on more than one task or activity at the same time, such as speaking on the phone while driving a car. Multitasking can result in time wasted due to human context switching and becoming prone to errors due to insufficient attention.
+    Human multitasking is the concept that one can split their attention on more than one task or activity at the same time,
+    such as speaking on the phone while driving a car. Multitasking can result in time wasted due to human context switching 
+    and becoming prone to errors due to insufficient attention.
 
-According to research https://en.wikipedia.org/wiki/Human_multitasking#Research, multitasking significantly increases the risk of making mistakes.
+According to [research](https://en.wikipedia.org/wiki/Human_multitasking#Research), multitasking significantly increases the risk of making mistakes.
 
-Therefore, avoiding multitasking is the goal. TDD helps you by separating the process of implementing behavior and working on structure.
+So the aim is to avoid multitasking. Because an error reduces efficiency by creating unnecessary work. Efficiency is a measure of how well a system or process performs in achieving its intended goal or objective while minimizing the amount of wasted resources, time or effort.
+
+TDD helps you to achieve this by separating the process of implementing behavior and working on the structure. TDD is not a way to ensure 100% test coverage, but rather to ensure that you are building sustainable solutions that cost less to change.
+
+Even though the focus is on the design aspect rather than creating test coverage, I think the coverage is more than a side effect, as some people define it. It plays an important part in the efficincy value. Without it, we would run into the risk of introducing a lot of bugs, when doing the refactoring process. They ensure that we only refactor and don't accidentally change behavior.
+
+ 

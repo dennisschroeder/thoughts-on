@@ -1,5 +1,7 @@
 # Mastering Complexity in Software Engineering
 
+![Image of hands holding self-made spaghetti](images/mastering_complexity_in_software_engineering_header.jpg)
+
 Mastering complexity is the most essential thing in software engineering. Avoiding it as much as we can is our task. Allow it only when it is essential and cannot be avoided because the value it creates justifies the cost of it.
 
 Unfortunately, we often see precisely the opposite happening. Complexity is a trap. You often realize that you build something too complex when you are done with it. There should be something to prevent this. But before we dive into the solution space, let us talk about the what and the why?
