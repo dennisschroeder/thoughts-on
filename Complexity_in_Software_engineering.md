@@ -6,9 +6,7 @@ Unfortunately, we often see precisely the opposite happening. Complexity is a tr
 
 ## what is complexity in software engineering?
 
-There are a lot of different types of complexity out there ([Wikipedia](https://en.wikipedia.org/wiki/Complexity). 
-
-In software engineering, we are especially interested in behavioral complexity.
+There are a lot of different types of complexity out there ([Wikipedia](https://en.wikipedia.org/wiki/Complexity)). In software engineering, we are especially interested in behavioral complexity.
 
     This type of complexity arises from the interactions between different parts of the system,
     as well as between the system and its users. The nature of behavioral complexity is the lack of
