@@ -1,4 +1,4 @@
-# Mastering complexity in Software Engineering
+# Mastering Complexity in Software Engineering
 
 Mastering complexity is the most essential thing in software engineering. Avoiding it as much as we can is our task. Allow it only when it is essential and cannot be avoided because the value it creates justifies the cost of it.
 
@@ -36,7 +36,7 @@ Here are a few examples:
 
 - Borders Group went bankrupt in 2011 due to its failure to adapt to changing consumer preferences and reliance on a complex inventory management system.
 
-In all these cases was a need for behavior change that could not be enforced due to complex systems that were out of control. The change was needed to fulfill new customer or internal requirements. Those companies that were able to adapt their systems to the requirements quickly had huge market advantages. The above mentioned companies not.
+In all these cases was a need for behavior change that could not be enforced due to complex systems that were out of control. The change was needed to fulfill new customer or internal requirements. Those companies that were able to adapt their systems to the requirements quickly had huge market advantages. The above-mentioned companies do not.
 
 **So what can we do?**
 
@@ -131,21 +131,28 @@ By treating the product development process not as an experiment, with a clear h
 
 "Lean Experiments are based on the Lean Startup approach to creating new products and services under conditions of extreme uncertainty. Lean Experiments are designed to quickly and cheaply gather evidence to validate or invalidate risky assumptions about your product."
 
-Nice, we don't need to reinvent the wheel. Some people already came across this problem and created a small, lightweight process how to make lean experiments:
+Nice, we don't need to reinvent the wheel. Some people already came across this problem and created a small, lightweight process for how to make lean experiments:
 
-1. **Hypothesis**: Clearly state the hypothesis you want to test. For example: "If we add a feature that allows users to easily save their progress, then more users will complete the sign-up process."
+1. **Hypothesis**
+Clearly states the hypothesis you want to test. For example: "If we add a feature that allows users to easily save their progress, then more users will complete the sign-up process."
 
-2. **Metrics**: Define the metrics you will use to measure the success of the experiment. These should be tied to your hypothesis. The metrics should be a part of your hypothesis. For example: If we add a feature that allows users to easily save their progress, then 20% more users will complete the sign-up process." Without a metric, your hypothesis is just an assumption. It is useless because it can not be tested and therefore not validated.
+2. **Metrics**:
+Define the metrics you will use to measure the success of the experiment. These should be tied to your hypothesis. The metrics should be a part of your hypothesis. For example: If we add a feature that allows users to easily save their progress, then 20% more users will complete the sign-up process." Without a metric, your hypothesis is just an assumption. It is useless because it can not be tested and therefore not validated.
 
-3. **Methodology**: Describe how you will run the experiment. This should include details such as the sample size, the time frame for the experiment, and any control groups you will use. For example: "We will randomly assign half of our users to the experimental group, which will have the new feature. The other half will be in the control group, which will not have the new feature. We will run the experiment for one week and measure the success metrics."
+3. **Methodology**:
+Describe how you will run the experiment. This should include details such as the sample size, the time frame for the experiment, and any control groups you will use. For example: "We will randomly assign half of our users to the experimental group, which will have the new feature. The other half will be in the control group, which will not have the new feature. We will run the experiment for one week and measure the success metrics."
 
-4. **Prototyping**: Develop a prototype of the feature or change you want to test. This should be quick and inexpensive, focusing on the core functionality that you want to test. So instead of a Minimal Valuable Product define an even smaller Minimal Testable Product. But bear in mind that your results heavily depend on what you test. If you test for revenue, you need to have the whole behavior of the feature implemented. Most of the time you'll end up implementing the MVP feature. But if you want to test if the majority of users would use the feature, a UI-only implementation with no real functionality might be just enough to gain first insides.
+4. **Prototyping**:
+Develop a prototype of the feature or change you want to test. This should be quick and inexpensive, focusing on the core functionality that you want to test. So instead of a Minimal Valuable Product define an even smaller Minimal Testable Product. But bear in mind that your results heavily depend on what you test. If you test for revenue, you need to have the whole behavior of the feature implemented. Most of the time you'll end up implementing the MVP feature. But if you want to test if the majority of users would use the feature, a UI-only implementation with no real functionality might be just enough to gain first insides.
 
-5. **Testing**: Run the experiment according to your methodology, collecting data on your success metrics. Be sure to track any unexpected results or issues that arise during the experiment.
+5. **Testing**: 
+Run the experiment according to your methodology, collecting data on your success metrics. Be sure to track any unexpected results or issues that arise during the experiment.
 
-6. **Analysis**: Analyze the data from the experiment, comparing the success metrics for the experimental group and the control group. Determine whether the hypothesis was supported or not.
+6. **Analysis**:
+Analyze the data from the experiment, comparing the success metrics for the experimental group and the control group. Determine whether the hypothesis was supported or not.
 
-7. **Next steps**: Based on the results of the experiment, decide on the next steps. If the hypothesis was supported, consider implementing the feature or change more broadly. If the hypothesis was not supported, consider iterating on the prototype and running the experiment again, or pivoting to a different approach altogether.
+7. **Next steps**: 
+Based on the results of the experiment, decide on the next steps. If the hypothesis was supported, consider implementing the feature or change more broadly. If the hypothesis was not supported, consider iterating on the prototype and running the experiment again, or pivoting to a different approach altogether.
 
 Remember that the lean experiment approach is all about rapid prototyping and iteration. Don't be afraid to adjust your approach based on what you learn during the experiment.
 
@@ -162,7 +169,7 @@ Ok, let us assume you fought the battle with yourself and everybody outside the 
 ### Modularity
 
 If complexity is the lack of knowledge of how a system behaves, especially when changes are made to it, we should find a coherent structure to separate the parts of our system that should not be interdependent. When we reduce the coupling between stuff that is not coherent, we only need to "load" the stuff in our brains that has the same concern, when applying changes to it and therefore reduce the possibility that changes affect too many other parts of the system that we are not able to track at once. It's divide and conquer. The concern of a thing plays an important role here. But not only one.
-Make sure that the parts of your system are responsible only for one thing. But responsibility should be interpreted differently here. It´s about the actor or driver of change. This can be a group of users or stakeholder, but not only. Keep this also in mind when deciding which behavior should be grouped into one coherent module.
+Make sure that the parts of your system are responsible only for one thing. But "responsibility" should be interpreted differently here. It´s about the actor or driver of change. This can be a group of users or stakeholders, but not only. Keep this also in mind when deciding which behavior should be grouped into one coherent module.
 
 In summary, the following are the properties that systems should have that help us master essential complexity.
 Therefore, systems should be:
@@ -193,7 +200,7 @@ You get the point.
 
 Developing digital products is hard and challenging. It is easy to screw things up quickly because not only our systems and their behavior are complex, the process of development itself is complex too.
 
-To master it every individual as well as the whole organization needs to become an expert in learning. The organization and every part of it needs to become an environment that supports learning, knowledge sharing, and embracing change.
+To master it every individual as well as the whole organization needs to become an expert in learning. The organization and every part of it need to become an environment that supports learning, knowledge sharing, and embracing change.
 
 We as individuals tend to fool ourselves, because we are humans. We like simple answers to complex questions and do not care if the answer is right or wrong if it sounds good. This can be mitigated through a lightweight process of lean experiments that leads us to a road of evidence.
 
