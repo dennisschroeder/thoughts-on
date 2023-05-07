@@ -8,7 +8,7 @@ There are a lot of misconceptions about TDD out there. And I will not go into de
 
 The classic test-driven approach is to start your implementation of some behavior you want to achieve by writing your test first. Yes even before starting the implementation. In my experience though, it does not matter if you write the test first or if you write it in parallel with your implementation. The point is to write it immediately and as the same process of implementing the logic. Not after you finished everything. 
 
-Run your tests and make sure they fail.
+Run your tests and make sure they **fail**.
 
 ### Implement the logic and structure for testability
 
@@ -17,7 +17,7 @@ Now comes the fun part. Implement the logic. But focus on behavior, not on the s
 Do this iteratively till you achieved the desired outcome and prove it by running the test successfully. Now your code is ready for production since it has already the assumed value from the customer's perspective.
 Even though we made no big moves to create a high-quality structure. It is ok to already deliver it to your customers.
 
-Run your tests and make sure they succeed.
+Run your tests and make sure they **succeed**.
 
 ### Refactor toward a better structure
 
@@ -30,16 +30,27 @@ This type of complexity arises from the interactions between different parts of 
 
 To reduce complexity we need to structure our parts in a way that encapsulates behavior. We mainly strive for independence between the moving parts by separation and clear interfaces. If you want to learn more about mastering complexity, I recommend reading my other article on this topic.
 
-Run your tests again and make sure they still succeed.
+Run your tests again and make sure they still **succeed**.
+
+#### Red, Green, Refactor 
+Just to be mentioned. This process is also known as red, green, and refactor. Because first, you start with failing tests which are mostly visually indicated by our toolings with a red color. Then you work till all tests pass which is shown by a green color and then you start the refactoring.
 
 ## Summerized
 
 Let´s recap what we just did:
 
-First We created executable specifications in the form of tests and confirm that they fail by not implementing any behavior yet.
+First, we created executable specifications in the form of tests and confirm that they fail by not implementing any behavior yet.
 
-Then...
+Then we focused on behavior and did only just enough structural work to make our code testable. 
 
-At last...
+At last, we invested in the future and made our code sustainable by lowering the cost of change.
 
-## The value is efficiency 
+## The true value of TDD
+
+We, humans, tend to interpret working efficiently as doing multiple things at a time. So-called human multitasking. Wikipedia says:
+
+Human multitasking is the concept that one can split their attention on more than one task or activity at the same time, such as speaking on the phone while driving a car. Multitasking can result in time wasted due to human context switching and becoming prone to errors due to insufficient attention.
+
+According to research https://en.wikipedia.org/wiki/Human_multitasking#Research, multitasking significantly increases the risk of making mistakes.
+
+Therefore, avoiding multitasking is the goal. TDD helps you by separating the process of implementing behavior and working on structure.
