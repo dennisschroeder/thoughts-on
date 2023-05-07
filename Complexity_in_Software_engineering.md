@@ -2,7 +2,25 @@
 
 Mastering complexity is the most essential thing in software engineering. Avoiding it as much as we can is our task. Allow it only when it is essential and cannot be avoided because the value it creates justifies the cost of it.
 
-Unfortunately, we often see precisely the opposite happening. Complexity is a trap. You often realize that you build something too complex when you are done with it. There should be something to prevent this. But before we dive into the solution space, let us talk about the why?
+Unfortunately, we often see precisely the opposite happening. Complexity is a trap. You often realize that you build something too complex when you are done with it. There should be something to prevent this. But before we dive into the solution space, let us talk about the what and the why?
+
+## what is complexity in software engineering?
+
+There are a lot of different types of complexity out there ([Wikipedia](https://en.wikipedia.org/wiki/Complexity). 
+
+In software engineering, we are especially interested in behavioral complexity.
+
+    This type of complexity arises from the interactions between different parts of the system,
+    as well as between the system and its users. The nature of behavioral complexity is the lack of
+    predictability of how the system reacts to interaction or change.
+
+**Examples**:
+
+- Large and highly coupled code is unable to change easily without a high risk of introducing bugs for example.
+
+- Concurrent or parallel running systems can be another excellent example of behavioral complexity because if you don't be careful they quickly become non-deterministic.
+
+- And there is a system that is tremendously complex that we all know well, even though it has nothing to do with computers, the human body. It is a complex system because it consists of many different parts, each of which has its unique structure, function, and behavior. These parts include organs, muscles, nerves, glands, hormones, etc. which work together in intricate ways to sustain life and maintain homeostasis. The interactions between different parts of the body are often nonlinear, meaning that small changes in one component can have significant effects on the behavior of the entire system.
 
 **Why is complexity such a thing?**
 
@@ -61,21 +79,6 @@ It refers to the inherent complexity of a problem or task that cannot be elimina
 It is the place where the actual value of the product gets manifested into code. Removing it will decrease the value. Some call it business logic or domain logic.
 
 A good example of essential complexity is cryptography. It involves the secure transmission of information and is inherently complex due to the mathematical principles and algorithms involved in encryption and decryption. While some aspects of cryptography can be simplified or abstracted, the fundamental complexity of secure information transmission cannot be eliminated.
-
-## But what is complexity in a more general context?
-
-There are a lot of different types of complexity out there [Wikipedia](https://en.wikipedia.org/wiki/Complexity). In software engineering, we are especially interested in behavioral complexity.
-
-This type of complexity arises from the interactions between different parts of the system, as well as between the system and its users.
-The nature of behavioral complexity is the lack of predictability of how the system reacts to interaction or change.
-
-**Examples**:
-
-- Large and highly coupled code is unable to change easily without a high risk of introducing bugs for example.
-
-- Concurrent or parallel running systems can be another excellent example of behavioral complexity because if you don't be careful they quickly become non-deterministic.
-
-- And there is a system that is tremendously complex that we all know well, even though it has nothing to do with computers, the human body. It is a complex system because it consists of many different parts, each of which has its unique structure, function, and behavior. These parts include organs, muscles, nerves, glands, hormones, etc. which work together in intricate ways to sustain life and maintain homeostasis. The interactions between different parts of the body are often nonlinear, meaning that small changes in one component can have significant effects on the behavior of the entire system.
 
 ## Tackling accidental complexity
 
