@@ -9,6 +9,8 @@ Here I share my mental model of software development and related stuff. To avoid
 
 ## Contact
 
-Mail: dennisschroeder@me.com
-Twitter: https://twitter.com/DSchroeder80
-LinkedIn: [Dennis Schröder](https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=dennis-schröder-4222b814b)
+- Mail: dennisschroeder@me.com
+
+- Twitter: https://twitter.com/DSchroeder80
+
+- LinkedIn: [Dennis Schröder](https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=dennis-schröder-4222b814b)
