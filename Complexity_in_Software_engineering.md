@@ -6,7 +6,7 @@ Mastering complexity is the most essential thing in software engineering. Avoidi
 
 Unfortunately, we often see precisely the opposite happening. Complexity is a trap. You often realize that you build something too complex when you are done with it. There should be something to prevent this. But before we dive into the solution space, let us talk about the what and the why?
 
-## what is complexity in software engineering?
+## What is complexity in software engineering?
 
 There are a lot of different types of complexity out there ([Wikipedia](https://en.wikipedia.org/wiki/Complexity)). In software engineering, we are especially interested in behavioral complexity.
 
@@ -22,7 +22,7 @@ There are a lot of different types of complexity out there ([Wikipedia](https://
 
 - And there is a system that is tremendously complex that we all know well, even though it has nothing to do with computers, the human body. It is a complex system because it consists of many different parts, each of which has its unique structure, function, and behavior. These parts include organs, muscles, nerves, glands, hormones, etc. which work together in intricate ways to sustain life and maintain homeostasis. The interactions between different parts of the body are often nonlinear, meaning that small changes in one component can have significant effects on the behavior of the entire system.
 
-**Why is complexity such a thing?**
+## Why is complexity such a thing?
 
 Software was invented to be “soft”, as its name already tells us. It was intended to be a way to easily change the behavior of machines. If we’d wanted the behavior of machines to be hard to change, we would have called it hardware.
 
@@ -40,7 +40,7 @@ Here are a few examples:
 
 In all these cases was a need for behavior change that could not be enforced due to complex systems that were out of control. The change was needed to fulfill new customer or internal requirements. Those companies that were able to adapt their systems to the requirements quickly had huge market advantages. The above-mentioned companies do not.
 
-**So what can we do?**
+### So what can we do?
 
 Avoiding complexity whenever possible. But when is it possible and when not? I guess the only right answer can be: "It depends!".
 
