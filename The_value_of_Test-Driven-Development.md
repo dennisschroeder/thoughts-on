@@ -31,7 +31,7 @@ This type of complexity arises from the interactions between different parts of 
 
 To reduce complexity we need to structure our parts in a way that encapsulates behavior. We mainly strive for independence between the moving parts by separation and clear interfaces. If you want to learn more about mastering complexity, I recommend reading my other article on this topic.
 
-Run your tests again and make sure they still **succeed**.
+Run your tests again and make sure they **still succeed**.
 
 #### Red, Green, Refactor 
 Just to be mentioned. This process is also known as red, green, and refactor. Because first, you start with failing tests which are mostly visually indicated by our toolings with a red color. Then you work till all tests pass which is shown by a green color and then you start the refactoring.
@@ -55,12 +55,12 @@ We, humans, tend to interpret working efficiently as doing multiple things at a 
     such as speaking on the phone while driving a car. Multitasking can result in time wasted due to human context switching 
     and becoming prone to errors due to insufficient attention.
 
-According to [research](https://en.wikipedia.org/wiki/Human_multitasking#Research), multitasking significantly increases the risk of making mistakes.
+According to [research](https://en.wikipedia.org/wiki/Human_multitasking#Research), multitasking significantly increases the risk of making mistakes which I consider inefficient because it can lead to wasted time, resources, and effort. When we make a mistake, we have to go back and redo the work or fix the error, which can take additional time and resources.
 
-So the aim is to avoid multitasking. Because an error reduces efficiency by creating unnecessary work. Efficiency is a measure of how well a system or process performs in achieving its intended goal or objective while minimizing the amount of wasted resources, time or effort.
+So the aim is to avoid multitasking because it increases the risk of introducing errors. TDD helps you to achieve this by separating the process of implementing behavior and working on the structure. 
 
-TDD helps you to achieve this by separating the process of implementing behavior and working on the structure. TDD is not a way to ensure 100% test coverage, but rather to ensure that you are building sustainable solutions that cost less to change.
+TDD is not a way to ensure 100% test coverage, but rather to ensure that you are building sustainable solutions that cost less to change.
 
-Even though the focus is on the design aspect rather than creating test coverage, I think the coverage is more than a side effect, as some people define it. It plays an important part in the efficincy value. Without it, we would run into the risk of introducing a lot of bugs, when doing the refactoring process. They ensure that we only refactor and don't accidentally change behavior.
+Even though the focus is on the design aspect rather than creating test coverage, I think the coverage is more than a side effect, as some people define it. It plays an important part in the efficiency value. Without it, we would run into the risk of introducing a lot of bugs, when doing the refactoring process. They ensure that we only change the structure of our code and don't accidentally change its behavior.
 
  
